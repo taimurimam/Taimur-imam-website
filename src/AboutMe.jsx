@@ -21,7 +21,7 @@ let linkdinLink = "https://www.linkedin.com/in/taimur-imam-7aa32486/"
 
             <h1 className='text-5xl font-extrabold  text-black text-left mt-6'>Experience</h1>
             <p className=' text-black text-left text-l font-extralight mt-4'>
-                Over 10+ years of experience working with companies from all over the world. I design & develop iOS Applications to help businesses and improve people's lives.
+                With over a decade of experience since 2012, I’ve been designing and developing iOS, Android, and Web applications for companies across the globe. My focus is on creating impactful digital solutions that help businesses grow and make everyday life easier for people.
            </p>    
            <a href= {linkdinLink} target="_blank" rel="noopener noreferrer"> 
             <button className='bg-black text-white px-6 py-3 rounded-sm w-40 mt-6 hover:bg-red-800'>Linkdin</button>
