@@ -13,6 +13,7 @@ export const Footer = () =>{
           <ul className="flex flex-wrap gap-6 text-sm uppercase tracking-wide">
             <li><a href="#home" className="hover:text-white transition">Home</a></li>
             <li><a href="#portfolio" className="hover:text-white transition">Portfolio</a></li>
+            <li><a href="#experience" className="hover:text-white transition">Testimonials</a></li>
             <li><a href="#experience" className="hover:text-white transition">Experience</a></li>
             <li><a href="#contact" className="hover:text-white transition">Contact Us</a></li>
           </ul>
@@ -38,7 +39,7 @@ export const Footer = () =>{
 
         {/* Bottom text */}
         <div className="text-center text-sm mt-6">
-          © {new Date().getFullYear()} Your Name. All rights reserved.
+          © {new Date().getFullYear()} Taimur imam. All rights reserved.
         </div>
       </div>
     </footer>

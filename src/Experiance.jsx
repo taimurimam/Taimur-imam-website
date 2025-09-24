@@ -45,7 +45,7 @@ function ExperianceCell({experiance}) {
              <h1 className=' text-2xl md:text-3xl font-bold  text-black text-left mt-2'>
                 {experiance.role}
             </h1>
-             <h1 className='text-2xl font-normal  text-red-700 text-left mt-2'>
+             <h1 className='text-xl font-normal  text-red-700 text-left mt-2'>
                 {experiance.company}
             </h1>
         </div>   
