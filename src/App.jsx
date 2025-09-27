@@ -11,6 +11,10 @@ import { Footer } from './Footer'
 import { ContactForm } from './ContactForm'
 import { WhatsAppButton } from './WhatsAppButton'
 import {Ratings} from './Ratings' 
+
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -18,6 +22,7 @@ function App() {
     <>
       <div className='flex flex-col '>
         <Navbar/>
+         <ToastContainer /> {/* add this for toast messae.  */}
          <Header/>
          <WhatsAppButton/>
          <AboutMe/>  

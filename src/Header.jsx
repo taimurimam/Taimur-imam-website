@@ -4,8 +4,13 @@ import sapLogo from "./assets/home.png";
 import { FaGithub, FaTwitter } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { motion } from "framer-motion";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const Header = () => {
+  let myUpworkLinlk =
+    "https://www.upwork.com/freelancers/~01e19fb95a97128be7?mp_source=share";
+
   return (
     <motion.div
       initial={{ opacity: 0, y: +100 }} // Starting point
@@ -23,9 +28,19 @@ export const Header = () => {
         <p className=" text-black text-left text-xl font-light mt-8">
           I am a Top Rated Plus developer with a 100% job success rate.
         </p>
-        <button className="bg-black text-white px-6 py-3 rounded-sm w-40 mt-2 hover:bg-red-800">
+
+        <button
+          onClick={() =>
+            window.open(
+              myUpworkLinlk,
+              "_blank"
+            )
+          }
+          className="bg-[#14A800]  text-white px-6 py-3 rounded-sm w-40 mt-2 hover:bg-[#128700]"
+        >
           Upwork
         </button>
+
         <SocialIcons />
       </div>
       <div className="w-full  py-4 flex  px-4 md:px-22  ">
@@ -42,7 +57,7 @@ export const Header = () => {
 function SocialIcons() {
   let linkdinLink = "https://www.linkedin.com/in/taimur-imam-7aa32486/";
   let gitHubLink = "https://github.com/taimurimam";
-    let twitterLink = "https://x.com/IMAMTAIMUR"
+  let twitterLink = "https://x.com/IMAMTAIMUR";
 
   return (
     <div className="flex space-x-4 mt-14">

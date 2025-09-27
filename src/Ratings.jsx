@@ -8,32 +8,32 @@ export const Ratings = () => {
       image:'https://img1.wsimg.com/isteam/ip/decfcfd0-8af6-48d4-9915-b56825c1acf4/Like%20this.jpeg/:/cr=t:16.22%25,l:16.22%25,w:67.57%25,h:67.57%25/rs=w:730,h:730,cg:true,m',
       text : "Very good job. A very good developer who has the skills, knowledge and patience. He helped me successfully complete the iOS project. I'm very satisfied"
     }, 
-        {name:'Sarfaraj Biswas' , 
-      profession:'iOS Developer' , 
+        {name:'Bader Alghanim' , 
+      profession:'CEO at Deema Apps' , 
       rating: 3,
-      image:'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D',
-      text:'They went above and beyond to make the entire process smooth and stress-free. Their dedication, knowledge, and personal touch made all the difference.'
+      image:'https://media.licdn.com/dms/image/v2/D4D03AQHmoYY_j2_gIQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1720255059732?e=2147483647&v=beta&t=PRrAJ_mrLQN5eZq80QG6egODrAzvUn5YUJfsiqmkfSc',
+      text:'We enjoyed working with Taimur. He did an excellent job with a very tight deadline! We will be using his services again.'
     },
-        {name:'Salman Khan' , 
-      profession:'iOS Developer' , 
+        {name:'Esteban Salsano' , 
+      profession:'CEO' , 
       rating: 4,
-      image:'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D',
+      image:'https://www.upwork.com/profile-portraits/c1tQ33p6_kNyCycRSgfmvLWvDC3l9Hj0NdeODdYRAGJe30wyyjCVmn6BRj4SXIEKhA',
 
-      text : 'Working with them was a seamless experience; they listened carefully to my needs and guided me every step of the way. Their professionalism and genuine care truly set them apart.'
+      text : "Great Freelancer to work with, the apps made by him are high quality and easy to work with him."
 
     },
-      {name:'Sk Azad' , 
-      profession:'iOS Developer' , 
+      {name:'Eric Fernandez' , 
+      profession:'CEO' , 
       rating: 4, 
-      image:'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D',
-      text:'They went above and beyond to make the entire process smooth and stress-free. Their dedication, knowledge, and personal touch made all the difference.'
-
+      image:'https://media.licdn.com/dms/image/v2/D4E03AQFsYib7FHfp6w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1718290865491?e=1761782400&v=beta&t=igunyXrv-LOVJXIa1LIO0-heHUDa_M2jFJFEFPqPz_8',
+      text:"I really appreciate the hard word and patience of Taimur and his team. Good job with everything."
     },
-      {name:'Ayaz' , 
-      profession:'iOS Developer' , 
+    
+      {name:'Matej S' , 
+      profession:'Ljubljana, Slovenia' , 
       rating: 0, 
      image:'https://media.istockphoto.com/id/1386479313/photo/happy-millennial-afro-american-business-woman-posing-isolated-on-white.jpg?s=612x612&w=0&k=20&c=8ssXDNTp1XAPan8Bg6mJRwG7EXHshFO5o0v9SIj96nY=',
-      text:'From the very first meeting, they understood my vision and helped me find the perfect property. '
+      text:"Collaborating with Taimur on the development of the prototype of our mobile application was truly outstanding. His responsiveness and his professional approach made communication a breeze, and he swiftly grasped our project's objectives and our desired outcomes."
     } 
   ]
   return ( 

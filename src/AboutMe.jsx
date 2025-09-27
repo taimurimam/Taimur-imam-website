@@ -18,13 +18,12 @@ let linkdinLink = "https://www.linkedin.com/in/taimur-imam-7aa32486/"
             <p className=' text-black text-left text-l font-extralight mt-4'>
                 If you would like a rough quote for your next project, try this great online tool: https://estimatemyapp.com, or get in contact for something more accurate!         
            </p>   
-
             <h1 className='text-5xl font-extrabold  text-black text-left mt-6'>Experience</h1>
             <p className=' text-black text-left text-l font-extralight mt-4'>
                 With over a decade of experience since 2012, I’ve been designing and developing iOS, Android, and Web applications for companies across the globe. My focus is on creating impactful digital solutions that help businesses grow and make everyday life easier for people.
            </p>    
-           <a href= {linkdinLink} target="_blank" rel="noopener noreferrer"> 
-            <button className='bg-black text-white px-6 py-3 rounded-sm w-40 mt-6 hover:bg-red-800'>Linkdin</button>
+           <a className='w-40' href= {linkdinLink} target="_blank" rel="noopener noreferrer"> 
+            <button className='bg-[#0A66C2] text-white px-6 py-3 rounded-sm w-40 mt-6 hover:bg-[#004182]'>Linkdin</button>
            </a>
         </div>  
     </div>
