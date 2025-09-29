@@ -1,11 +1,18 @@
 import React from 'react'
 import profile from "./assets/profile3.jpg";
+import { motion } from "framer-motion";
 
 
 export const AboutMe = () => {
 let linkdinLink = "https://www.linkedin.com/in/taimur-imam-7aa32486/"
   return (
-    <div className='w-full  flex flex-col  lg:flex-row  p-2 md:p-8'>
+     <motion.div
+       initial={{ opacity: 0, y: +100 }} // Starting point
+      animate={{ opacity: 1, y: 0 }} // Animate to
+      transition={{ duration: 1.1 }} // Animation speed
+      className="w-full  flex flex-col  lg:flex-row  p-2 md:p-8" 
+    id='About'  
+    >    
         <div className='w-full  py-4 flex  px-4 md:px-22  '>
             <img className='w-120 h-120 object-cover mt-12 rounded-full border-8  border-white shadow-[0_4px_6px_-1px_rgba(0,0,0,0.2),0_2px_4px_-1px_rgba(0,0,0,0.02)] ' src={profile} alt="header" />
         </div>
@@ -26,7 +33,7 @@ let linkdinLink = "https://www.linkedin.com/in/taimur-imam-7aa32486/"
             <button className='bg-[#0A66C2] text-white px-6 py-3 rounded-sm w-40 mt-6 hover:bg-[#004182]'>Linkdin</button>
            </a>
         </div>  
-    </div>
+    </motion.div>
   )         
 }
 

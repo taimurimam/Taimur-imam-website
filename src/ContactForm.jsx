@@ -44,18 +44,18 @@ export const ContactForm = () =>{
       setResult("Form Submitted Successfully");
       event.target.reset();
       toast.success("I have received your message. Will be in touch soon")
-          setButtonTitle('Send Message')
-
+      setButtonTitle('Send Message')
+      setFormData({ name: "", email: "", message: "" });
     } else {
       console.log("Error", data);
       setResult(data.message);
       toast.error(data.message)
-      setButtonTitle('Re Send')
+      setButtonTitle('Re Try')
     }
   };
 
   return (
-    <div className="max-w-2xl mx-auto p-6  shadow-l mb-8 rounded-lg mt-16 w-full">
+    <div id='Contact' className="max-w-2xl mx-auto p-6  shadow-l mb-8 rounded-lg mt-16 w-full">
       <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">
         Contact Us
       </h2>
@@ -106,7 +106,7 @@ export const ContactForm = () =>{
 
         {/* Submit Button */}
         <button
-          type="sbmit"
+          type="submit"
           className=" bg-black w-full bg-linden text-white py-3 rounded-lg font-semibold hover:opacity-90 transition duration-300"
         >
           {buttonTitle}

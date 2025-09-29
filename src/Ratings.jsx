@@ -37,7 +37,7 @@ export const Ratings = () => {
     } 
   ]
   return ( 
-    <div className='px-4 md:px-20 px-auto '>
+    <div id='Testinimial' className='px-4 md:px-20 px-auto '>
          <div className='flex flex-col text-black font-light gap-2 mt-15 '>
                 <h1 className='font-bold text-3xl text-black'>
                     Client <span className='border-b-2 font-light underline underline-offset-6 '>Testimonials</span> 

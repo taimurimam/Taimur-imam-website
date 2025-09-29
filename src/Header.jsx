@@ -18,7 +18,7 @@ export const Header = () => {
       transition={{ duration: 1.1 }} // Animation speed
       className="w-full  flex flex-col lg:flex-row mt-1 md:mt-25"
     >
-      <div className="w-full  py-4 flex flex-col px-4 md:px-22 text-left mt-10 md:mt-30">
+      <div id="Home" className="w-full  py-4 flex flex-col px-4 md:px-22 text-left mt-10 md:mt-30">
         <h1 className="text-5xl font-extrabold  text-black text-left">
           Hello, I'm Taimur Imam.
         </h1>

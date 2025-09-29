@@ -11,10 +11,9 @@ export const Footer = () =>{
         {/* Menu */}
         <div className="flex flex-col md:flex-row justify-between items-center border-b border-gray-700 pb-6">
           <ul className="flex flex-wrap gap-6 text-sm uppercase tracking-wide">
-            <li><a href="#home" className="hover:text-white transition">Home</a></li>
-            <li><a href="#portfolio" className="hover:text-white transition">Portfolio</a></li>
-            <li><a href="#experience" className="hover:text-white transition">Testimonials</a></li>
-            <li><a href="#experience" className="hover:text-white transition">Experience</a></li>
+            <li><a href="#Home" className="hover:text-white transition">Home</a></li>
+            <li><a href="#Portfolio" className="hover:text-white transition">Portfolio</a></li>
+            <li><a href="#Testinimial" className="hover:text-white transition">Testimonials</a></li>
             <li><a href="#contact" className="hover:text-white transition">Contact Us</a></li>
           </ul>
 
