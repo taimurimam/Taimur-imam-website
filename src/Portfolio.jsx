@@ -11,6 +11,7 @@ export const Portfolio = () => {
         setPortfolios(data?.data?.portfolio_list);
       });
   }, []);
+  
   return (
     <div id="Portfolio">
       <div className="flex flex-col text-black font-light gap-2 mt-15 ">
