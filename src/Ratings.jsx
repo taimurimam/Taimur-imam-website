@@ -1,4 +1,5 @@
 import React from "react";
+import { motion  } from "framer-motion";
 
 export const Ratings = () => {
   let ratings = [
@@ -46,7 +47,13 @@ export const Ratings = () => {
     },
   ];
   return (
-    <div id="Testinimial" className="px-4 md:px-20 px-auto ">
+    <motion.div
+    initial={{ opacity: 0, y: +100 }} // Starting point
+    animate={{ opacity: 1, y: 0 }} // Animate to
+    transition={{ duration: 1.1 }} // Animation speed
+      viewport={{ once: true }}
+
+    id="Testinimial" className="px-4 md:px-20 px-auto ">
       <div className="flex flex-col text-black font-light gap-2 mt-15 ">
         <h1 className="font-bold text-3xl text-black">
           Client{" "}
@@ -66,7 +73,7 @@ export const Ratings = () => {
           ))
         }
       </div>
-    </div>
+    </motion.div>
   );
 };
 
@@ -74,7 +81,14 @@ export default Ratings;
 
 function Rating({ rating }) {
   return (
-    <div className="bg-white  w-full md:w-80 h-100 rounded-xl flex flex-col items-center p-4 shadow-l gap-2">
+    <motion.div
+
+    initial={{ opacity: 0, y: +100 }} // Starting point
+     animate={{ opacity: 1, y: 0 }} // Animate to
+    transition={{ duration: 1.1 }} // Animation speed
+      viewport={{ once: true }}
+
+    className="bg-white  w-full md:w-80 h-100 rounded-xl flex flex-col items-center p-4 shadow-l gap-2">
       <img
         className="w-28 h-28 rounded-full mt-4"
         src={rating.image}
@@ -83,7 +97,7 @@ function Rating({ rating }) {
       <div className="text-xl font-bold text-black">{rating.name}</div>
       <div className="text-sm font-light text-black">{rating.profession}</div>
       <div className="text-sm font-light text-black mt-3">{rating.text}</div>
-    </div>
+    </motion.div>
   );
 }
 

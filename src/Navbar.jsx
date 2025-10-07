@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import logo from "./assets/SAP2.png";
 
 export const Navbar = () => {
-  const NAVBAR_HEIGHT = 70; // adjust if your navbar height differs
+  const NAVBAR_HEIGHT = 90; // adjust if your navbar height differs
   const [active, setActive] = useState("Home");
 
   const links = [

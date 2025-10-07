@@ -40,6 +40,8 @@ function PortfolioCell({ portfolio, index }) {
       initial={{ opacity: 0, x: -100 }} // Starting point
       animate={{ opacity: 1, x: 0 }} // Animate to
       transition={{ duration: 0.8 }} // Animation speed
+            viewport={{ once: true, amount: 0.25 }} // amount = what fraction must be visible
+
       className={`flex flex-col ${
         index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse "
       }  text-black mt-6 mx-4  md:mx-15 p-4 rounded-xl gap-8 justify-center overflow-hidden bg-white`}
