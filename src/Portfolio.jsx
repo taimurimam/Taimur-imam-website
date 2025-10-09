@@ -1,17 +1,27 @@
 import React from "react";
 import { useState, useEffect, form } from "react";
 import { motion } from "framer-motion";
+import axios from "axios"; 
+
 
 export const Portfolio = () => {
   const [portfolios, setPortfolios] = useState([]);
+  let baseUrl = "https://smartappsplanet.com/api/get-all-portfolio-list"; 
   useEffect(() => {
-    fetch("https://smartappsplanet.com/api/get-all-portfolio-list")
-      .then((response) => response.json())
-      .then((data) => {
-        setPortfolios(data?.data?.portfolio_list);
-      });
+  getPortFilios();
   }, []);
+
+function getPortFilios() { // all API to get the portfolios ....... 
+    axios
+      .get(baseUrl)
+      .then((res) => {
+        setPortfolios(res?.data.data.portfolio_list)
+      })
+      .catch((err) => console.error(err));
+  } 
+
   
+
   return (
     <div id="Portfolio">
       <div className="flex flex-col text-black font-light gap-2 mt-15 ">
@@ -40,8 +50,7 @@ function PortfolioCell({ portfolio, index }) {
       initial={{ opacity: 0, x: -100 }} // Starting point
       animate={{ opacity: 1, x: 0 }} // Animate to
       transition={{ duration: 0.8 }} // Animation speed
-            viewport={{ once: true, amount: 0.25 }} // amount = what fraction must be visible
-
+      viewport={{ once: true, amount: 0.25 }} // amount = what fraction must be visible
       className={`flex flex-col ${
         index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse "
       }  text-black mt-6 mx-4  md:mx-15 p-4 rounded-xl gap-8 justify-center overflow-hidden bg-white`}
