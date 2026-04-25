@@ -2,11 +2,12 @@ import React from "react";
 import { useState, useEffect, form } from "react";
 import { motion } from "framer-motion";
 import axios from "axios"; 
+import { UserList } from "./UserList";
 
 
 export const Portfolio = () => {
   const [portfolios, setPortfolios] = useState([]);
-  let baseUrl = "https://smartappsplanet.com/api/get-all-portfolio-list"; 
+  let baseUrl = "https://smartappsplanet.in/api/get-all-portfolio-list"; 
   useEffect(() => {
   getPortFilios();
   }, []);
@@ -19,8 +20,6 @@ function getPortFilios() { // all API to get the portfolios .......
       })
       .catch((err) => console.error(err));
   } 
-
-  
 
   return (
     <div id="Portfolio">
@@ -40,6 +39,7 @@ function getPortFilios() { // all API to get the portfolios .......
           <PortfolioCell key={index} portfolio={portfolioItem} index={index} />
         ))}
       </div>
+      {/* <UserList/> */}
     </div>
   );
 };
@@ -60,7 +60,7 @@ function PortfolioCell({ portfolio, index }) {
     </div> */}
       <img
         className="w-full md:w-100 md:h-70  lg:w-140 lg:h-100 rounded-xl"
-        src={`https://smartappsplanet.com/${portfolio.project_image}`}
+        src={`https://smartappsplanet.in/${portfolio.project_image}`}
         alt={portfolio.title}
       />
       <div className="flex flex-col pt-6 gap-2">

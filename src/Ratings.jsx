@@ -1,5 +1,7 @@
 import React from "react";
 import { motion  } from "framer-motion";
+import { Plus } from "lucide-react";
+
 
 export const Ratings = () => {
   let ratings = [
@@ -32,9 +34,8 @@ export const Ratings = () => {
       name: "Eric Fernandez",
       profession: "CEO",
       rating: 4,
-      image:
-        "https://media.licdn.com/dms/image/v2/D4E03AQFsYib7FHfp6w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1718290865491?e=1761782400&v=beta&t=igunyXrv-LOVJXIa1LIO0-heHUDa_M2jFJFEFPqPz_8",
-      text: "I really appreciate the hard word and patience of Taimur and his team. Good job with everything.",
+      image: "https://media.licdn.com/dms/image/v2/D4E03AQFsYib7FHfp6w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718331788466?e=1772668800&v=beta&t=OnysG41REL8zu-4VZHNXIffGIWvp1fnM5TifKZ7kJA0"
+     , text: "I really appreciate the hard word and patience of Taimur and his team. Good job with everything.",
     },
 
     {
@@ -46,12 +47,14 @@ export const Ratings = () => {
       text: "Collaborating with Taimur on the development of the prototype of our mobile application was truly outstanding. His responsiveness and his professional approach made communication a breeze, and he swiftly grasped our project's objectives and our desired outcomes.",
     },
   ];
+    const [showAlert, setShowAlert] = useState(false);
+
   return (
     <motion.div
     initial={{ opacity: 0, y: +100 }} // Starting point
     animate={{ opacity: 1, y: 0 }} // Animate to
     transition={{ duration: 1.1 }} // Animation speed
-      viewport={{ once: true }}
+    viewport={{ once: true }}
 
     id="Testinimial" className="px-4 md:px-20 px-auto ">
       <div className="flex flex-col text-black font-light gap-2 mt-15 ">
@@ -80,13 +83,15 @@ export const Ratings = () => {
 export default Ratings;
 
 function Rating({ rating }) {
+    const [showAlert, setShowAlert] = useState(false);
+
   return (
     <motion.div
 
     initial={{ opacity: 0, y: +100 }} // Starting point
-     animate={{ opacity: 1, y: 0 }} // Animate to
+    animate={{ opacity: 1, y: 0 }} // Animate to
     transition={{ duration: 1.1 }} // Animation speed
-      viewport={{ once: true }}
+    viewport={{ once: true }}
 
     className="bg-white  w-full md:w-80 h-100 rounded-xl flex flex-col items-center p-4 shadow-l gap-2">
       <img
@@ -96,8 +101,9 @@ function Rating({ rating }) {
       />
       <div className="text-xl font-bold text-black">{rating.name}</div>
       <div className="text-sm font-light text-black">{rating.profession}</div>
-      <div className="text-sm font-light text-black mt-3">{rating.text}</div>
+      <div className="text-sm font-light text-black mt-3">{rating.text}</div>  
     </motion.div>
+
   );
 }
 
@@ -110,3 +116,41 @@ function Star({ rating = 3, totalStars = 5 }) {
     </div>
   );
 }
+
+
+import { useState } from "react"; 
+ function CustomAlertButton() {
+  const [showAlert, setShowAlert] = useState(false);
+  return (
+    <div className="flex items-center justify-center min-h-screen bg-gray-100"> 
+      {/* Custom Alert Modal */}
+      {showAlert && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white rounded-2xl shadow-xl p-6 w-80 text-center">
+            <h2 className="text-xl font-semibold mb-3">Custom Alert</h2>
+            <p className="text-gray-600 mb-5">
+              This is a custom alert using Tailwind CSS.
+            </p>
+            <button
+              onClick={() => setShowAlert(false)}
+              className="px-4 py-2 bg-red-500 text-white rounded-lg 
+              hover:bg-red-600 transition"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+
+
+
+
+
+
+
+
+

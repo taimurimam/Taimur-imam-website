@@ -14,6 +14,7 @@ import {Ratings} from './Ratings'
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import UserApp from './UserApp'
 
 function App() {
   const [count, setCount] = useState(0)
