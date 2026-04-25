@@ -8,11 +8,12 @@ import { UserList } from "./UserList";
 export const Portfolio = () => {
   const [portfolios, setPortfolios] = useState([]);
   let baseUrl = "https://smartappsplanet.in/api/get-all-portfolio-list"; 
+
   useEffect(() => {
-  getPortFilios();
+  getPortfolios();
   }, []);
 
-function getPortFilios() { // all API to get the portfolios ....... 
+function getPortfolios() { // all API to get the portfolios ....... 
     axios
       .get(baseUrl)
       .then((res) => {

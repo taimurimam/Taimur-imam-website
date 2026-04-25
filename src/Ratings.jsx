@@ -34,7 +34,7 @@ export const Ratings = () => {
       name: "Eric Fernandez",
       profession: "CEO",
       rating: 4,
-      image: "https://media.licdn.com/dms/image/v2/D4E03AQFsYib7FHfp6w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718331788466?e=1772668800&v=beta&t=OnysG41REL8zu-4VZHNXIffGIWvp1fnM5TifKZ7kJA0"
+      image: "https://media.licdn.com/dms/image/v2/D4E03AQFsYib7FHfp6w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718331788466?e=1778716800&v=beta&t=OKcDtB3eZQd-VM6oQsqN30TCedRNSCFhFINl7zNmDsQ"
      , text: "I really appreciate the hard word and patience of Taimur and his team. Good job with everything.",
     },
 

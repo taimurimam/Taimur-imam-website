@@ -28,7 +28,6 @@ export const Header = () => {
         <p className=" text-black text-left text-xl font-light mt-8">
           I am a Top Rated Plus developer with a 100% job success rate.
         </p>
-
         <button
           onClick={() =>
             window.open(
@@ -57,7 +56,7 @@ export const Header = () => {
 function SocialIcons() {
   let linkdinLink = "https://www.linkedin.com/in/taimur-imam-7aa32486/";
   let gitHubLink = "https://github.com/taimurimam";
-  let twitterLink = "https://x.com/IMAMTAIMUR";
+  let twitterLink = "https://x.com/IMAMTAIMUR"; 
 
   return (
     <div className="flex space-x-4 mt-14">
@@ -65,11 +64,12 @@ function SocialIcons() {
         <FaGithub className="w-6 h-6 hover:text-red-700 transition-colors" />
       </a>
       <a href={linkdinLink} target="_blank" rel="noopener noreferrer">
-        <IoLogoLinkedin className="w-6 h-6 hover:text-red-700 transition-colors" />
+        <IoLogoLinkedin className="w-6 h-6 hover:text-red-700 transition-colors" /> 
       </a>
-      <a href={twitterLink} target="_blank" rel="noopener noreferrer">
+
+      {/* <a href={twitterLink} target="_blank" rel="noopener noreferrer">
         <FaTwitter className="w-6 h-6 hover:text-red-700 transition-colors" />
-      </a>
+      </a> */}
     </div>
   );
 }
