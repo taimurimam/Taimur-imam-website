@@ -20,7 +20,7 @@ export const Header = () => {
     >
       <div id="Home" className="w-full  py-4 flex flex-col px-4 md:px-22 text-left mt-10 md:mt-30">
         <h1 className="text-5xl font-extrabold  text-black text-left">
-          Hello, I'm Taimur Imam.
+          Hello, I'm Taimur Imam sap.
         </h1>
         <p className=" text-black text-left text-xl font-light mt-2">
           Full Stack Developer | iOS | Android | Web Dev.{" "}
